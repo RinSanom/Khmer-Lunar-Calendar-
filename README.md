@@ -1,1 +1,1 @@
-kon srers uae git hx lok kru 
+kon srers use git hx lok kru 
