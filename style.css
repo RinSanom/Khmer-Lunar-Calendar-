@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang&family=Kantumruy+Pro:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Kantumruy Pro", "Battambang", "Khmer OS", Arial, sans-serif;
+  font-optical-sizing: auto;
+  margin: 0px 120px 0 120px;
+  background-color: #e8f6e9;
+}
+header {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18;
+}
+main > .container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  border-radius: 12pxpx;
+}
+main > .container {
+  width: 50%;
+}

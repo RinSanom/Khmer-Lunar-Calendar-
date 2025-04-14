@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khmer Calendar - April 2025</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Khmer&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Battambang", system-ui;
+      }
+
+      body {
+        background-color: #f5f5f5;
+        padding: 1rem;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f5f5f5;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .navigation {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .navigation button {
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+
+      .title {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .current-date {
+        text-align: right;
+      }
+
+      .logo {
+        background-color: green;
+        color: white;
+        padding: 0.3rem 0.5rem;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 0.8rem;
+      }
+
+      main {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .calendar-container {
+        flex: 3;
+      }
+
+      .events-container {
+        flex: 2;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 0.5rem;
+      }
+
+      th,
+      td:hover {
+        background-color: #f1f1f1;
+        cursor: pointer;
+      }
+
+      th {
+        background-color: #4caf50;
+        color: white;
+        font-weight: bold;
+      }
+      img {
+        height: 18px;
+      }
+
+      .weekend {
+        color: blue;
+      }
+
+      .holiday {
+        color: red;
+      }
+
+      .current-day {
+        background-color: #e8f5e9;
+      }
+
+      .other-month {
+        color: #ccc;
+      }
+
+      .day-number {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+      }
+
+      .lunar-date {
+        font-size: 0.8rem;
+        color: #666;
+      }
+
+      img {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-right: 5px;
+      }
+
+      .events-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 1rem;
+        text-align: start;
+        flex-shrink: 0;
+      }
+
+      .events-list {
+        overflow-y: auto;
+        flex-grow: 1;
+        padding-right: 5px;
+      }
+
+      .event-item {
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background-color: #f9f9f9;
+        display: flex;
+      }
+
+      .event-date {
+        align-items: center;
+      }
+
+      .event-date-number {
+        width: 30px;
+        height: 30px;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-right: 1rem;
+      }
+
+      .event-name {
+        color: blue;
+      }
+
+      .khmer-new-year {
+        color: red;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        color: #666;
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navigation">
+        <div class="title">ខែមេសា April 2025</div>
+      </div>
+
+      <div class="current-date">ផល្ភុន​ - ចេក្រ​ ឆ្នាំរោង​ ព.ស. ២៥៦៨</div>
+    </header>
+
+    <main>
+      <section class="calendar-container">
+        <table>
+          <thead>
+            <tr>
+              <th>អាទិ</th>
+              <th>ចន្ទ</th>
+              <th>អង្គ</th>
+              <th>ពុធ</th>
+              <th>ព្រហ</th>
+              <th>សុក្រ</th>
+              <th>សៅរ៍</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="other-month">
+                <div class="day-number">30</div>
+                <div class="lunar-date">៨ កើត</div>
+              </td>
+              <td class="other-month">
+                <div class="day-number">31</div>
+                <div class="lunar-date">៩ កើត</div>
+              </td>
+              <td>
+                <div class="day-number">1</div>
+                <div class="lunar-date">១០ កើត</div>
+              </td>
+              <td>
+                <div class="day-number">2</div>
+                <div class="lunar-date">១១ កើត</div>
+              </td>
+              <td>
+                <div class="day-number">3</div>
+                <div class="lunar-date">១២ កើត</div>
+              </td>
+              <td class="weekend">
+                <div class="day-number">4</div>
+                <div class="lunar-date">១៣ កើត</div>
+              </td>
+              <td>
+                <div class="day-number">
+                  <img src="./buddha_place.png" alt="" />
+                  <span>5</span>
+                </div>
+                <div class="lunar-date">១៤ កើត</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="day-number">6</div>
+                <div class="lunar-date">១៥ កើត</div>
+              </td>
+              <td class="weekend">
+                <div class="day-number">7</div>
+                <div class="lunar-date">១ រោច</div>
+              </td>
+              <td>
+                <div class="day-number">8</div>
+                <div class="lunar-date">២ រោច</div>
+              </td>
+              <td>
+                <div class="day-number">9</div>
+                <div class="lunar-date">៣ រោច</div>
+              </td>
+              <td>
+                <div class="day-number">10</div>
+                <div class="lunar-date">៤ រោច</div>
+              </td>
+              <td>
+                <div class="day-number">11</div>
+                <div class="lunar-date">៥ រោច</div>
+              </td>
+              <td>
+                <div class="day-number">
+                  <img src="./buddha_place.png" alt="" />
+                  <span>5</span>
+                </div>
+                <div class="lunar-date">៦ រោច</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="current-day">
+                <div class="day-number">13</div>
+                <div class="lunar-date">៧ រោច</div>
+              </td>
+              <td class="holiday">
+                <div class="day-number">14</div>
+                <div class="lunar-date">៨ រោច</div>
+              </td>
+              <td class="holiday">
+                <div class="day-number">15</div>
+                <div class="lunar-date">៩ រោច</div>
+              </td>
+              <td class="holiday">
+                <div class="day-number">16</div>
+                <div class="lunar-date">១០ រោច</div>
+              </td>
+              <td>
+                <div class="day-number">17</div>
+                <div class="lunar-date">១១ រោច</div>
+              </td>
+              <td>
+                <div class="day-number">18</div>
+                <div class="lunar-date">១២ រោច</div>
+              </td>
+              <td>
+                <div class="day-number">19</div>
+                <div class="lunar-date">១៣ រោច</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="day-number">
+                  <img src="./buddha_place.png" alt="" />
+                  <span>5</span>
+                </div>
+                <div class="lunar-date">១៤ រោច</div>
+              </td>
+              <td>
+                <div class="day-number">21</div>
+                <div class="lunar-date">១៥ រោច</div>
+              </td>
+              <td>
+                <div class="day-number">22</div>
+                <div class="lunar-date">១ កើត</div>
+              </td>
+              <td>
+                <div class="day-number">23</div>
+                <div class="lunar-date">២ កើត</div>
+              </td>
+              <td>
+                <div class="day-number">24</div>
+                <div class="lunar-date">៣ កើត</div>
+              </td>
+              <td>
+                <div class="day-number">25</div>
+                <div class="lunar-date">៤ កើត</div>
+              </td>
+              <td>
+                <div class="day-number">
+                  <img src="./buddha_place.png" alt="" />
+                  <span>5</span>
+                </div>
+                <div class="lunar-date">៥ កើត</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="day-number">27</div>
+                <div class="lunar-date">៦ កើត</div>
+              </td>
+              <td class="weekend">
+                <div class="day-number">28</div>
+                <div class="lunar-date">៧ កើត</div>
+              </td>
+              <td>
+                <div class="day-number">29</div>
+                <div class="lunar-date">៨ កើត</div>
+              </td>
+              <td class="weekend">
+                <div class="day-number">30</div>
+                <div class="lunar-date">៩ កើត</div>
+              </td>
+              <td class="other-month">
+                <div class="day-number">1</div>
+                <div class="lunar-date">១០ កើត</div>
+              </td>
+              <td class="other-month">
+                <div class="day-number">2</div>
+                <div class="lunar-date">១១ កើត</div>
+              </td>
+              <td class="other-month">
+                <div class="day-number">3</div>
+                <div class="lunar-date">១២ កើត</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="other-month">
+                <div class="day-number">4</div>
+                <div class="lunar-date">១៣ កើត</div>
+              </td>
+              <td class="other-month">
+                <div class="day-number">5</div>
+                <div class="lunar-date">១៤ កើត</div>
+              </td>
+              <td class="other-month">
+                <div class="day-number">6</div>
+                <div class="lunar-date">១៥ កើត</div>
+              </td>
+              <td class="other-month">
+                <div class="day-number">7</div>
+                <div class="lunar-date">១ រោច</div>
+              </td>
+              <td class="other-month">
+                <div class="day-number">8</div>
+                <div class="lunar-date">២ រោច</div>
+              </td>
+              <td class="other-month">
+                <div class="day-number">9</div>
+                <div class="lunar-date">៣ រោច</div>
+              </td>
+              <td class="other-month">
+                <div class="day-number">10</div>
+                <div class="lunar-date">៤ រោច</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="events-container">
+        <h2 class="events-title">បុណ្យ ប្រវត្តិការណ៍ សម្រាប់ខែមេសា</h2>
+
+        <div class="events-list">
+          <div class="event-item">
+            <div class="event-date">
+              <div class="event-date-number">3</div>
+              <div>ព្រហ</div>
+            </div>
+            <div class="event-name">
+              ថ្ងៃចែង (Tomb-Sweeping Day (Qingming Festival))
+            </div>
+          </div>
+
+          <div class="event-item">
+            <div class="event-date">
+              <div class="event-date-number">6</div>
+              <div>អាទិ</div>
+            </div>
+            <div class="event-name">ទិវាសុខភាពពិភពលោក (World Health Day)</div>
+          </div>
+
+          <div class="event-item">
+            <div class="event-date">
+              <div class="event-date-number">7</div>
+              <div>ចន្ទ</div>
+            </div>
+            <div class="event-name">
+              ទិវាព្រះពុទ្ធសាសនាអន្តរជាតិ (International Buddhist Day)
+            </div>
+          </div>
+
+          <div class="event-item">
+            <div class="event-date">
+              <div class="event-date-number">13</div>
+              <div>អាទិ</div>
+            </div>
+            <div class="khmer-new-year">
+              កំណើតឆ្នាំថ្មីប្រពៃណីខ្មែរ - មហាសង្ក្រាន្ត នៅ 04:48 AM (Khmer New
+              Year - Maha Songkran at 04:48 AM)
+            </div>
+          </div>
+
+          <div class="event-item">
+            <div class="event-date">
+              <div class="event-date-number">14</div>
+              <div>ចន្ទ</div>
+            </div>
+            <div class="khmer-new-year">
+              កំណើតឆ្នាំថ្មីប្រពៃណីខ្មែរ - វារៈវ័នបត (Khmer New Year - Vara
+              Vanabat)
+            </div>
+          </div>
+
+          <div class="event-item">
+            <div class="event-date">
+              <div class="event-date-number">15</div>
+              <div>អង្គ</div>
+            </div>
+            <div class="khmer-new-year">
+              កំណើតឆ្នាំថ្មីប្រពៃណីខ្មែរ - វារៈឡើងស័ក (Khmer New Year - Vara
+              Loeng Sak)
+            </div>
+          </div>
+
+          <div class="event-item">
+            <div class="event-date">
+              <div class="event-date-number">27</div>
+              <div>អាទិ</div>
+            </div>
+            <div class="event-name">
+              ទិវាកិច្ចការ សុវត្ថិភាពនិងសុខភាពការងារ (World Day for Safety and
+              Health at Work)
+            </div>
+          </div>
+
+          <div class="event-item">
+            <div class="event-date">
+              <div class="event-date-number">29</div>
+              <div>អង្គ</div>
+            </div>
+            <div class="event-name">
+              កម្ពុជាចូលជាសមាជិកអាស៊ាន ឆ្នាំ១៩៩៩ (Cambodia joined The
+              Association of Southeast Asian Nations (ASEAN))
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>Rotha Apps © 2024　Khmer Lunar Calendar version: 1.5.0</footer>
+  </body>
+</html>
